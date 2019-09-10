@@ -1,0 +1,555 @@
+@import url('https://fonts.googleapis.com/css?family=Leckerli+One|Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Courgette|Pacifico&display=swap');
+
+:root{
+--black: rgba(0, 0, 0, 1);
+--lightOrange: #eeccb0;
+--mainOrange: rgba(224, 116, 28, 1);
+--dullOrange: rgb(233, 158, 96);
+--mainGrey: #ececec;
+--mainSpacing: 0.1rem;
+--mainTransition: all 0.5s ease-in-out;
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: var(--black);
+    font-family: 'Leckerli One', cursive;
+    position: relative;
+}
+
+/******************header****************************/
+/******************nav bar****************************/
+.navbar{
+    position:fixed;
+    top: 0%;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-self:center;
+    background: var(--black);
+    z-index: 1;
+}
+.navbar-center{
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding:0 1.5 rem;
+    align-items: center;
+}
+.nav-title{
+    letter-spacing: var(--mainSpacing);
+    color: white;
+    font-size: 18px;
+}
+.nav-house{
+    font-size: 16px;
+    border-bottom: solid 0.1rem ;
+    color: var(--mainOrange);
+}
+.navbar-center a{
+    text-decoration: none;
+    list-style: none;
+}
+.nav-icons{
+    font-size: 1.5rem;
+    color:var(--lightOrange);
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: repeat(3, 3rem);
+}
+.nav-icon a{
+    color: var(--lightOrange);
+    cursor: pointer;
+    padding: 3rem;
+}
+.nav-icon1{
+    display: none;
+    font-size: 1.5rem;
+    color:var(--lightOrange);
+    cursor: pointer;
+    padding-left: -0.9rem;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-name: pulse;
+}
+.cart-btn{
+    position: relative;
+}
+.cart-items{
+    position: absolute;
+    top: 3px;
+    right: 5%;
+    color: white;
+    background: var(--mainOrange);
+    padding: 0 5px;;
+    border-radius: 30%;
+}
+
+@media screen and (max-width:760px){
+.cart-items{
+    position: absolute;
+    top: 4px;
+    right: 3%;
+    color: white;
+    background: var(--mainOrange);
+    padding: 0 5px;;
+    border-radius: 30%;
+}
+.nav-icon1{
+    display: block;
+    font-size: 1.5rem;
+    color:var(--lightOrange);
+    cursor: pointer;
+    padding-left: -0.9rem;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-name: pulse;
+}
+}
+@media screen and (max-width:500px){
+.nav-icon1{
+    display: block;
+    font-size: 1.5rem;
+    color:var(--lightOrange);
+    cursor: pointer;
+    padding-left: -0.9rem;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-name: pulse;
+}
+.navbar-center{
+    width: 80%;
+}
+}
+
+/*********fa bar animation************/
+@keyframes pulse{
+0%{
+    transform: scale(1)
+}
+50%{
+    transform: scale(1.5)
+}
+100%{
+    transform: scale(1)
+    }
+}
+
+/*********shop btn animation************/
+@keyframes btn{
+0%{
+    transform: scale(1)
+}
+50%{
+    transform: scale(1.1)
+}
+100%{
+    transform: scale(1)
+    }
+}
+
+
+/*********end of navbar*********************/
+/*********second-navbar*********************/
+.second-navbar{
+    position:sticky;
+    top: 9%;
+    width: 100%;
+    display: grid;
+    background: var(--mainGrey);
+    z-index: 0;
+}
+.second-center{
+    width: 80%;
+    display: flex;
+    height: 40px;;
+    margin: auto;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    justify-content: space-around
+}
+.second-navbar_links{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    z-index: 4;
+}
+.second-links {
+    margin: 0 auto;
+    padding:1.2rem;
+    text-align: center;
+    font-size: 14px;
+    color: var(--black);
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: var(--mainTransition);
+    position: relative;
+     
+}
+.second-links a{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all 0.8s ease-in-out;
+}
+.second-links a:hover{
+    color:#7c4711;
+}
+.second-links .fa-sort-down{
+    margin-left: 7px;
+    color: var(--mainOrange);
+}
+.second-links-1{
+    display: none;
+    width: 220%;
+    margin-left: -3rem;
+    transition: all 0.8s ease-in-out;
+}
+.second-links-1 ul li{
+    text-align: left;
+     transition: all 0.8s ease-in-out;
+}
+.second-links:hover .second-links-1 {
+    display: block;
+    position: absolute;
+    background: var(--mainGrey);
+}
+.second-links:hover .second-links-1 ul{
+    display: inline-block;
+    list-style: none;
+    padding: 0 1rem;
+    margin: 10px;
+}
+.second-links-1 ul li:hover{
+     background: #e6e3e3;
+     color: #8d8b8b
+}
+.second-links:hover .second-links-1 ul li{
+    padding: 1rem 0;
+    border-bottom: 1px dotted var(--lightOrange);
+}
+.second-links:hover .second-links-1 ul li:last-child{
+    border-bottom:none;
+}
+.fa-angle-right{
+    color: var(--mainOrange);
+    margin-left: 6px;
+}
+.second-links-2{
+    display: none;
+}
+.hover-me:hover .second-links-2{
+    position: absolute;
+    display: block;
+    width: 80%;
+    margin-top: -10px;
+    margin-left: 120px;
+    background: var(--mainGrey);
+}
+
+@media screen and (max-width:500px){
+.second-navbar{
+    display: none;
+}
+.second-center{
+    display: none;
+}
+}
+@media screen and (max-width:760px){
+ .second-navbar{
+    display: none; 
+}
+.second-center{
+    display: none;
+}   
+}
+/*********end of second - navbar*********************/
+
+/**********banner****************/
+.banner-section{
+    min-height: calc(100vh - 40px);
+    background: url(img/bcg5.webp) center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner{
+    background:rgb(255, 255, 255, 0.7);
+    text-align: center;
+    justify-content: center;
+    display: inline-block;
+    padding: 2rem;
+}
+.banner-title{
+    text-transform: capitalize;
+    font-family: 'Pacifico', cursive;
+    font-size: 3rem;
+    letter-spacing: var(--mainSpacing);
+    margin-bottom: 2rem;
+}
+.banner-btn{
+    padding: 1rem 1rem;
+    color: var(--black);
+    outline: none;
+    border-radius: 5%;
+    border: solid 1px var(--mainOrange);
+    background: var(--mainOrange);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: var(--mainTransition);
+    text-transform: uppercase;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-name: btn;
+}
+.banner-btn:hover{
+    background: rgba(224, 116, 28, 0.7);;
+    color:brown;
+    font-size: 18px;}
+
+/*****end of banner*******/
+
+
+
+
+
+
+/**********end of header***********************************************************/
+
+
+/***** followers section **********/
+.followers{
+    height: 50%;
+    width: 100%;
+    background: #fff;
+     padding-top:1rem;
+
+}
+.insta_follower{
+    height: 45%;
+    width: 100vw;
+}
+.insta_follower-title{
+    text-align: center;
+    font-size: 1rem;
+    margin: 2rem;
+    color: var(--mainOrange);
+    letter-spacing: var(--mainSpacing);
+}
+.insta_follower-items{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    padding: 0 2rem;
+}
+@media screen and (max-width:760px){
+    .insta_follower-items{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 0 1rem;
+}
+    .insta-img{
+    cursor: pointer;
+    background: var(--black);
+    position: relative;
+    overflow: hidden;
+    height: 30px;
+}
+}
+.insta-img{
+    cursor: pointer;
+    background: var(--black);
+    position: relative;
+    overflow: hidden;
+    height: 90%;
+    width: 10rem;
+}
+.insta_single{
+    width: 100%;
+    transition: var(--mainTransition);
+    padding: 0;
+    
+}
+.insta-img img{
+    height: 10rem;
+    width: 10rem;
+}
+.insta-img:hover .insta_single {
+    opacity: 0.5;
+    transform: scale(1.1);
+}
+.insta-img:hover .fa-instagram{
+    color: var(--mainOrange)
+}
+.ig{
+   color: var(--black);
+    position:absolute;
+    font-size: 2rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/***** end of followers section **********/
+/***** newsletter**********/
+.newsletter{
+    margin: 2rem;
+}
+.newsletter-container{
+    display: flex;
+    margin-left: 4rem;
+}
+.newsletter-title{
+    font-size: 1rem;
+    color: var(--mainOrange);
+    letter-spacing: var(--mainSpacing);
+    text-transform: capitalize;
+    padding-right: 2rem;
+    margin: 0.5rem;
+}
+.newsletter-form input[type]{
+    padding: 0.80rem;
+    outline: none;
+    border: none;
+    background: transparent;
+    font-size: 1rem;
+    font-family: 'Courgette', cursive;
+    color: black
+}
+.newsletter-form input::placeholder{
+    color: rgb(94, 92, 92);
+}
+
+.newsletter-btn{
+    padding-left: 32rem;
+}
+.sub-btn{
+    background: var(--mainOrange);
+    color: #fff;
+    text-transform:capitalize;
+    outline: none;
+    border:none;
+    padding: 1rem 0.75rem;
+    letter-spacing: var(--mainSpacing);
+    transition: var(--mainTransition);
+    transform: translateX(101%);
+    cursor: pointer;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-name: btn;
+}
+/***** end of newsletter section **********/
+/***** footer **********/
+
+footer{
+    background: #fff;
+}
+.footer-links{
+    display: flex;
+    text-align: center;
+    padding: 1.5rem;
+    margin-left: 4.5rem;
+}
+.footer-link a{
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+    padding: 1rem;
+    color: var(--black);
+    transition: var(--mainTransition);
+    text-transform: capitalize;
+}
+.footer-link a:hover{
+    color: var(--mainOrange);
+    margin: 1rem;
+    font-weight: bold;
+}
+.map{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    margin: 1.5rem 0;
+}
+.map a{
+    text-decoration: none;
+    color: black;
+    transition: var(--mainTransition);
+}
+.map a:hover{
+    color: var(--mainOrange);
+    letter-spacing: var(--mainSpacing);
+}
+.connection{
+    margin-top: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+.users-icon{
+    text-align: center;
+    padding: 1rem;
+}
+.users-icon a{
+    padding: 0.4rem;
+    font-size: 1rem;
+    color: var(--black);
+    transition: var(--mainTransition)
+}
+.users-icon a:hover{
+    color: var(--mainOrange);
+    font-size: 1.2rem;
+}
+.payment-icon{
+    font-size: 1.5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.payment-icon{ 
+    color: black;
+    padding: 0.3rem;
+    transition: var(--mainTransition)
+}   
+.need-help{
+    text-align: center;
+    color: #807e7e;
+    margin-top:1.5rem;
+    margin-bottom: 2rem; 
+
+}
+
+/***** end of footer **********/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

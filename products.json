@@ -1,0 +1,109 @@
+{
+  "items": [
+    {
+      "sys": { "id": "1" },
+      "fields": {
+        "title": "acead suits",
+        "price": 60.99,
+        "image": { "fields": { "file": { "url": "./img/suits1.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "2" },
+      "fields": {
+        "title": "styled suits",
+        "price": 70.59,
+        "image": { "fields": { "file": { "url": "./img/suits2.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "3" },
+      "fields": {
+        "title": "whine suits",
+        "price": 80.99,
+        "image": { "fields": { "file": { "url": "./img/suits3.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "4" },
+      "fields": {
+        "title": "dark blue suits",
+        "price": 50.99,
+        "image": { "fields": { "file": { "url": "./img/suits4.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "5" },
+      "fields": {
+        "title": "britain suits",
+        "price": 88.99,
+        "image": { "fields": { "file": { "url": "./img/suits5.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "6" },
+      "fields": {
+        "title": "american suits",
+        "price": 90.99,
+        "image": { "fields": { "file": { "url": "./img/suits6.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "7" },
+      "fields": {
+        "title": "kate wears",
+        "price": 60.99,
+        "image": { "fields": { "file": { "url": "./img/suits7.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "8" },
+      "fields": {
+        "title": "stripped fitted suits",
+        "price": 70.99,
+        "image": { "fields": { "file": { "url": "./img/suits8.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "9" },
+      "fields": {
+        "title": "luwy jean jacket",
+        "price": 33.99,
+        "image": { "fields": { "file": { "url": "./img/suits9.jpg" } } }
+      }
+    },
+    {
+      "sys": {"id": "10"},
+      "fields": {
+        "title": "cover jean",
+        "price": 20.99,
+        "image": {
+          "fields": {
+            "file": {
+              "url": "./img/suits10.jpg" }}}
+      }
+    },
+    {
+      "sys": { "id": "11"},
+      "fields": {
+        "title": "blue suits",
+        "price": 100.99,
+        "image": {
+          "fields": {
+            "file": {
+              "url": "./img/suits11.jpg"} } } }
+    },
+    {
+      "sys": {
+        "id": "12"
+      },
+      "fields": {
+        "title": "britain",
+        "price": 120.99,
+        "image": {
+          "fields": {
+            "file": {
+              "url": "./img/suits12.jpg"} }}}
+    } 
+  ]
+}
